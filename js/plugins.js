@@ -30,16 +30,16 @@ $('.countdown').downCount({
     date: '06/10/2016 12:00:00',
     offset: +10
 }, function () {
-    alert('WOOT WOOT, done!');
+    //alert('WOOT WOOT, done!');
 });
-     
+
 
 // -------------------------------------------------------------
 // Google Map Customization
 // -------------------------------------------------------------
 
 jQuery(function ($) {
-    
+
     'use strict';
 
     var map;
@@ -70,7 +70,7 @@ jQuery(function ($) {
     });
 
 
-    var styles = [ 
+    var styles = [
 
     {
         "featureType": "road",
@@ -111,7 +111,7 @@ jQuery(function ($) {
     map.addStyle({
         styledMapName:"Styled Map",
         styles: styles,
-        mapTypeId: "map_style"  
+        mapTypeId: "map_style"
     });
 
     map.setStyle("map_style");
@@ -120,7 +120,7 @@ jQuery(function ($) {
 /**
  * MAILCHIMP
  */
-$('#mc-form').ajaxChimp({ 
-    url: 'http://doelit.us10.list-manage.com/subscribe/post?u=b02e4f21e264536eff4820875&amp;id=4d57faf2cb' 
+$('#mc-form').ajaxChimp({
+    url: 'http://doelit.us10.list-manage.com/subscribe/post?u=b02e4f21e264536eff4820875&amp;id=4d57faf2cb'
     /* Replace Your AjaxChimp Subscription Link */
 });
