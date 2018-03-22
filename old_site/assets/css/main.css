@@ -48,6 +48,42 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left1 {
+  left: 0;
+}
+
+/* Control the right side */
+.right1 {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -61,6 +97,19 @@
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.left-half {
+	  background-color: #ff9e2c;
+	  float: left;
+	  width: 50%;
+		z-index: -2;
+	}
+	.right-half {
+	  background-color: #b6701e;
+	  float: left;
+	  width: 50%;
+		z-index: -1;
 	}
 
 	.container.\31 25\25 {
@@ -2496,6 +2545,10 @@
 			width: 100%;
 		}
 
+		.image.left1 {
+			left: 500px;
+		}
+
 			.image.fit img {
 				width: 100%;
 			}
@@ -3012,6 +3065,10 @@
 		.spotlight.left .content {
 			border-right-width: 0.35em;
 			left: 0;
+		}
+
+		.spotlight.left {
+			left: 100;
 		}
 
 		.spotlight.right .content {
